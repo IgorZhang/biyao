@@ -6,3 +6,101 @@
     display: block;
     height: .42rem;
 }
+.addAddress main{
+    width: 94%;
+    margin: 0 auto;
+}
+.addAddress .user-info{
+    margin: .1rem 0;
+}
+.addAddress p{
+    line-height: .3rem;
+    font-size: .14rem;
+}
+.addAddress .user-info input{
+    width: 100%;
+    height: .35rem;
+    border: 1px solid #ccc;
+    border-radius: .05rem;
+}
+
+.addAddress .user-address{
+    padding-top: .1rem;
+}
+.addAddress .user-address select{
+    width: 100%;
+    height: .35rem;
+}
+.addAddress .user-address .fullAddress{
+    width: 100%;
+    height: .35rem;
+    border: 1px solid #ccc;
+
+}
+.addAddress .user-address p .checkbox{
+    display: inline-block;
+    width: .15rem;
+    height: .15rem;
+    background: url(https://static.biyao.com/m/img/icon/s1.png?v=hash) no-repeat;
+    background-size: cover;
+}
+.addAddress .user-address .mrdz{
+    font-size: .13rem;
+    color: #666;
+}
+.addAddress .user-address .mrdz .checkbox.checked{
+    background: url(https://static.biyao.com/m/img/icon/s2.png?v=hash) no-repeat;
+    background-size: cover;;
+}
+.addAddress .addAddress-btn{
+    display: block;
+    width: 100%;
+    height: .4rem;
+    border: 1px solid #ccc;
+    border-radius: .05rem;
+    background-color: #B768A5;
+    color: #fff;
+    text-align: center;
+    line-height: .4rem;
+}
+
+
+.addAddress footer {
+    padding-top: .22rem;
+    height: .86rem;
+    font-size: .12rem;
+    color: #666;
+}
+.addAddress footer a {
+    color: #666;
+}
+.addAddress footer .top {
+    display: flex;
+    padding: 0 .12rem;
+    height: .4rem;
+    line-height: .4rem;
+    justify-content: space-between;
+}
+.addAddress footer .top span {
+    display: inline-block;
+    width: .2rem;
+    text-align: center;
+}
+.addAddress footer .bottom {
+    margin: 0 auto;
+    border-top: 1px solid #999;
+    text-align: center;
+    height: .38rem;
+    line-height: .38rem;
+    font-size: .12rem;
+}
+.addAddress footer .bottom mark {
+    background-color: transparent;
+    color: #666;
+}
+.addAddress footer .bottom span {
+    padding: .2rem;
+}
+.addAddress footer .bottom a {
+    color: #B768A5;
+}
