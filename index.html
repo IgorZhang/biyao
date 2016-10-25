@@ -17,15 +17,17 @@
         }
         html{
             font-size: 100px;
+            height: 100%;
         }
         body{
             font-size: .16rem;
+            height: 100%;
         }
         a{
             text-decoration: none;
             color: black;
         }
-        header{
+        .index-div header{
             z-index: 20;
             width: 100%;
             height: .42rem;
@@ -37,7 +39,7 @@
             top: 0;
             background-color: #fff;
         }
-        header .page-tittle{
+        .index-div header .page-tittle{
             text-align: center;
             width: 70%;
             overflow: hidden;
@@ -47,7 +49,7 @@
             font-weight: bold;
             color: #666;
         }
-        header .left-back {
+        .index-div header .left-back {
             width: .42rem;
             height: .42rem;
             line-height: .42rem;
@@ -55,7 +57,7 @@
             font-size: .3rem;
             font-weight: bold;
         }
-        header .right-nav{
+        .index-div header .right-nav{
             width: .4rem;
             height: .4rem;
             margin-right: .07rem;
@@ -64,93 +66,97 @@
             background: url(https://static.biyao.com/m/img/icon/list.png?v=hash) no-repeat center;
             background-size: 65% 65%;
         }
-        nav{
+        .index-div nav{
             width: 100%;
-            height: .42rem;
+            height: .6rem;
             background-color: #fff;
             position: absolute;
             left: 0;
-            top: .5rem;
+            top: .4rem;
         }
-        nav ul {
+        .index-div nav ul {
             width: 100%;
             height: 100%;
             list-style: none;
             display: flex;
             align-items: center;
         }
-        nav ul li {
+        .index-div nav ul li {
             width: .4rem;
             flex-grow: 1;
             text-align: center;
-            padding-top:
         }
-        nav ul li a .imgwrap{
+        .index-div nav ul li a .imgwrap{
             width: .25rem;
             height: .25rem;
             margin: 0 auto;
         }
-        nav ul li a p{
+        .index-div nav ul li a p{
             line-height: .24rem;
             font-size: .115rem;
             color: #555;
         }
-        nav ul li .imgwrap{
+        .index-div nav ul li .imgwrap{
             background: url(https://static.biyao.com/m/img/icon/b4.png?v=hash) no-repeat center;
             background-size:  90%;
         }
-        nav ul li:nth-child(2) .imgwrap{
+        .index-div nav ul li:nth-child(2) .imgwrap{
             background: url(https://static.biyao.com/m/img/icon/b12.png?v=hash) no-repeat center;
             background-size:  90%;
         }
-        nav ul li:nth-child(3) .imgwrap{
+        .index-div nav ul li:nth-child(3) .imgwrap{
             background: url(https://static.biyao.com/m/img/icon/b5.png?v=hash) no-repeat center;
             background-size:  90%;
         }
-        nav ul li:last-child .imgwrap{
+        .index-div nav ul li:last-child .imgwrap{
             background: url(https://static.biyao.com/m/img/icon/b6.png?v=hash) no-repeat center;
             background-size:  90%;
+        }
+        .index-main{
+            height: 100%;
         }
 
     </style>
 </head>
 <body ng-app="myApp">
+    <div class="index-div">
+        <header>
+            <div class="left-back"><</div>
+            <p class="page-tittle">首页</p>
+            <div class="right-nav" ng-init="flag=false;" ng-click="flag=!flag"></div>
+            <nav ng-show="flag">
+                <ul>
+                    <li>
+                        <a href="#/">
+                            <div class="imgwrap"></div>
+                            <p>首页</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/category">
+                            <div class="imgwrap"></div>
+                            <p>分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/gwc">
+                            <div class="imgwrap"></div>
+                            <p>购物车</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/mine">
+                            <div class="imgwrap"></div>
+                            <p>我的必要</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
-    <header>
-        <div class="left-back"><</div>
-        <p class="page-tittle">首页</p>
-        <div class="right-nav" ng-init="flag=false;" ng-click="flag=!flag"></div>
-        <nav ng-show="flag">
-            <ul>
-                <li>
-                    <a href="#/">
-                        <div class="imgwrap"></div>
-                        <p>首页</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/category">
-                        <div class="imgwrap"></div>
-                        <p>分类</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/gwc">
-                        <div class="imgwrap"></div>
-                        <p>购物车</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/mine">
-                        <div class="imgwrap"></div>
-                        <p>我的必要</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <div ng-view></div>
+    <div ng-view class="index-main"></div>
 
 </body>
 <script src="./route.js" charset="utf-8"></script>
@@ -158,4 +164,7 @@
 <script src="./category/js/category.js" charset="utf-8"></script>
 <script src="./gwc/js/gwc.js" charset="utf-8"></script>
 <script src="./mine/js/mine.js" charset="utf-8"></script>
+<script src="./mine/js/login.js" charset="utf-8"></script>
+<script src="./mine/js/register.js" charset="utf-8"></script>
+<script src="./mine/js/addAddress.js" charset="utf-8"></script>
 </html>

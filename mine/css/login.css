@@ -1,0 +1,111 @@
+.login{
+    background-color: #EEEEEE;
+    height: 100%;
+}
+.login::before{
+    content: "";
+    display: block;
+    height: .42rem;
+}
+.login .login-info{
+    width: 90%;
+    margin: .15rem auto;
+}
+.login .login-info input{
+    width: 100%;
+    height: .4rem;
+    border: none;
+    padding-left: .3rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.login .login-info input:first-child{
+    border-top-left-radius: .05rem;
+    border-top-right-radius: .05rem;
+}
+.login .login-info input:last-child{
+    border-bottom-left-radius: .05rem;
+    border-bottom-right-radius: .05rem;
+}
+.login .loginBtns{
+    width: 90%;
+    margin: .2rem auto 0;
+}
+.login .loginBtns a{
+    display: block;
+    width: 100%;
+    height: .4rem;
+    border: 1px solid #ccc;
+    border-radius: .05rem;
+    color: #fff;
+    font-size: .14rem;
+    text-align: center;
+    line-height: .4rem;
+}
+.login .loginBtns .loging-btn{
+    background-color: #B768A5;
+}
+.login .loginBtns .register-btn{
+    background-color: #724A88;
+    margin-top: .15rem;
+}
+.login .zhmm{
+    font-size: .12rem;
+    text-align: right;
+    width: 90%;
+    margin: .3rem auto 0;
+    color: #888;
+}
+.login .bottom-div{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: .13rem;
+}
+.login .bottom-div .otherlogin {
+    width: 90%;
+    margin: 0 auto;
+}
+.login .bottom-div .otherlogin fieldset{
+    border: none;
+    border-top: 1px solid #888;
+}
+.login .bottom-div .otherlogin fieldset legend{
+    text-align: center;
+    padding: 0 .1rem;
+    color: #777;
+}
+.login .bottom-div .otherlogin .qqlogin{
+    width: 100%;
+    height: .4rem;
+    border-radius: .05rem;
+    background: #1BB2E9 url(https://static.biyao.com/m/img/login/login32.png?v=hash) center bottom no-repeat;
+    background-size: 33%;
+    border: 1px solid #ccc;
+    color: #fff;
+    margin: .15rem 0 .2rem;
+    font-size: .15rem;
+    padding-left: .3rem;
+    box-sizing: border-box;
+}
+
+.login .public-footer .bottom {
+margin: 0 auto;
+border-top: 1px solid #999;
+text-align: center;
+height: .37rem;
+line-height: .37rem;
+background-color: #f4f4f4;
+font-size: .115rem;
+}
+.login .public-footer .bottom mark {
+background-color: transparent;
+color: #666;
+}
+.login .public-footer .bottom span {
+padding: .2rem;
+}
+.login .public-footer .bottom a {
+color: #B768A5;
+}

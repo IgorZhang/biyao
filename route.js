@@ -19,6 +19,18 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: "./mine/html/mine.html",
         controller: 'mineCtrl'
     })
+    .when('/login',{
+        templateUrl: "./mine/html/login.html",
+        controller: 'loginCtrl'
+    })
+    .when('/register',{
+        templateUrl: "./mine/html/register.html",
+        controller: 'registerCtrl'
+    })
+    .when('/addAddress',{
+        templateUrl: "./mine/html/addAddress.html",
+        controller: 'addAddressCtrl'
+    })
     .otherwise({
         redirectTo: '/'
     })

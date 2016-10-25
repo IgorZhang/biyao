@@ -1,0 +1,93 @@
+.register{
+    height: 100%;
+    background-color: #EEEEEE;
+}
+.register::before{
+    content: "";
+    display: block;
+    height: .42rem;
+}
+.register .register-info{
+    width: 90%;
+    margin: .15rem auto .2rem;
+}
+.register .register-info input{
+    width: 100%;
+    height: .4rem;
+    border: none;
+    padding-left: .1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.register .register-info input:first-child{
+    margin-bottom: .1rem;
+}
+.register .register-info input:nth-child(2){
+    width: 60%;
+    margin-right: 5%;
+}
+.register .register-info .yzm{
+    width: 32%;
+    height: .4rem;
+    vertical-align: top;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+.register .tyxy{
+    width: 90%;
+    margin: 0 auto;
+    line-height: .2rem;
+    font-size: .12rem;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+.register .tyxy input{
+    width: .18rem;
+    height: .18rem;
+    margin-right: .05rem;
+}
+.register .tyxy input.checked{
+    background:#B768A5;
+}
+.register .tyxy a{
+    color: #B768A5;
+    margin-left: .05rem;
+}
+.register .register-btn{
+    width: 90%;
+    height: .4rem;
+    margin: .1rem auto;
+    background-color: #B768A5;
+    color: #fff;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: .05rem;
+    font-size: .14rem;
+    text-align: center;
+    line-height: .4rem;
+}
+
+.register .public-footer .bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #999;
+    text-align: center;
+    height: .37rem;
+    line-height: .37rem;
+    background-color: #f4f4f4;
+    font-size: .115rem;
+}
+.register .public-footer .bottom mark {
+    background-color: transparent;
+    color: #666;
+}
+.register .public-footer .bottom span {
+    padding: .2rem;
+}
+.register .public-footer .bottom a {
+    color: #B768A5;
+}
