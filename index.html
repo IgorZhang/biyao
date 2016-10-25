@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>必要</title>
+    <script src="libs/jquery-2.2.3.js" charset="utf-8"></script>
+    <script src="libs/angular.js" charset="utf-8"></script>
+    <script src="libs/angular-css.js" charset="utf-8"></script>
+    <script src="libs/angular-route.js" charset="utf-8"></script>
+    <style media="screen">
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 100px;
+        }
+        body{
+            font-size: .16rem;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        header{
+            z-index: 20;
+            width: 100%;
+            height: .42rem;
+            border-bottom: 2px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+        }
+        header .page-tittle{
+            text-align: center;
+            width: 70%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: .42rem;
+            font-size: .18rem;
+            font-weight: bold;
+            color: #666;
+        }
+        header .left-back {
+            width: .42rem;
+            height: .42rem;
+            line-height: .42rem;
+            text-align: center;
+            font-size: .3rem;
+            font-weight: bold;
+        }
+        header .right-nav{
+            width: .4rem;
+            height: .4rem;
+            margin-right: .07rem;
+            line-height: .4rem;
+            text-align: center;
+            background: url(https://static.biyao.com/m/img/icon/list.png?v=hash) no-repeat center;
+            background-size: 65% 65%;
+        }
+        nav{
+            width: 100%;
+            height: .42rem;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            top: .5rem;
+        }
+        nav ul {
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            width: .4rem;
+            flex-grow: 1;
+            text-align: center;
+            padding-top:
+        }
+        nav ul li a .imgwrap{
+            width: .25rem;
+            height: .25rem;
+            margin: 0 auto;
+        }
+        nav ul li a p{
+            line-height: .24rem;
+            font-size: .115rem;
+            color: #555;
+        }
+        nav ul li .imgwrap{
+            background: url(https://static.biyao.com/m/img/icon/b4.png?v=hash) no-repeat center;
+            background-size:  90%;
+        }
+        nav ul li:nth-child(2) .imgwrap{
+            background: url(https://static.biyao.com/m/img/icon/b12.png?v=hash) no-repeat center;
+            background-size:  90%;
+        }
+        nav ul li:nth-child(3) .imgwrap{
+            background: url(https://static.biyao.com/m/img/icon/b5.png?v=hash) no-repeat center;
+            background-size:  90%;
+        }
+        nav ul li:last-child .imgwrap{
+            background: url(https://static.biyao.com/m/img/icon/b6.png?v=hash) no-repeat center;
+            background-size:  90%;
+        }
+
+    </style>
+</head>
+<body ng-app="myApp">
+
+    <header>
+        <div class="left-back"><</div>
+        <p class="page-tittle">首页</p>
+        <div class="right-nav" ng-init="flag=false;" ng-click="flag=!flag"></div>
+        <nav ng-show="flag">
+            <ul>
+                <li>
+                    <a href="#/">
+                        <div class="imgwrap"></div>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/category">
+                        <div class="imgwrap"></div>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/gwc">
+                        <div class="imgwrap"></div>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/mine">
+                        <div class="imgwrap"></div>
+                        <p>我的必要</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div ng-view></div>
+
+</body>
+<script src="./route.js" charset="utf-8"></script>
+<script src="./home/js/home.js" charset="utf-8"></script>
+<script src="./category/js/category.js" charset="utf-8"></script>
+<script src="./gwc/js/gwc.js" charset="utf-8"></script>
+<script src="./mine/js/mine.js" charset="utf-8"></script>
+</html>
