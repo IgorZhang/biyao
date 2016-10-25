@@ -1,4 +1,83 @@
-h1{
-    color: blue;
-    font-size: 100px;
+.Empty-gwc header {
+  height: .42rem;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 1px 1px 5px rgba(7,0,2,.2);
+}
+.Empty-gwc .wrapper::before {
+    content: "";
+    height: .42rem;
+    display: block;
+    padding: 0;
+}
+.Empty-gwc main {
+  text-align: center;
+  font-size: .14rem;
+  height: 4.48rem;
+}
+.Empty-gwc main .top {
+  height: .5rem;
+  width: 100%;
+  padding: .3rem 0 .2rem;
+}
+.Empty-gwc main .top img {
+  height: 100%;
+}
+.Empty-gwc main .center {
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+.Empty-gwc main .bottom {
+  color: #fff;
+  width: 2.6rem;
+  height: .4rem;
+  line-height: .4rem;
+  background-color: #B768A5;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+.Empty-gwc main .bottom a {
+  color: #fff;
+}
+.Empty-gwc footer {
+  height: .86rem;
+  font-size: .12rem;
+  color: #666;
+}
+.Empty-gwc footer a {
+  color: #666;
+}
+.Empty-gwc footer .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .15rem;
+  height: .43rem;
+  line-height: .43rem;
+}
+.Empty-gwc footer .top span {
+  display: inline-block;
+  width: .2rem;
+  text-align: center;
+}
+.Empty-gwc footer .bottom {
+  margin: 0 auto;
+  border-top: 1px solid #999;
+  text-align: center;
+  height: .42rem;
+  line-height: .42rem;
+}
+.Empty-gwc footer .bottom mark {
+  background-color: transparent;
+  color: #666;
+}
+.Empty-gwc footer .bottom span {
+  padding: .2rem;
+}
+.Empty-gwc footer .bottom a {
+  color: #B768A5;
 }
