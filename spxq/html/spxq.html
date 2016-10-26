@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../css/spxq.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../../libs/swiper.css">
+
+</head>
+
+<body ng-app="" ng-init="flag = true">
+    <div class="spxq-container">
+        <!-- 头部 -->
+        <header>
+
+        </header>
+        <div class="wrapper">
+            <!-- 轮播图 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide s1">
+                        <img src="../imgs/1.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide s2">
+                        <img src="../imgs/2.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide s3">
+                        <img src="../imgs/3.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 商品信息 -->
+            <div class="info">
+                <section class="section1">
+                    <p><span>￥749</span>生产周期28天</p>
+                    <div>
+                        <span>7天无忧退换</span>
+                        <span>先行赔付</span>
+                        <span>运费由商家承担</span>
+                    </div>
+                </section>
+                <ul>
+                    <li ng-click="flag = !flag">选择规格尺码
+                      <!-- 下边处理尺码规格 -->
+                    </li>
+                    <div ng-hide="flag" class="size">
+                      <div class="wrap">
+                        <section class="top">
+                            <div class="left"><img src="../imgs/7.jpg" alt="" /></div>
+                            <div class="center">
+                              <span>￥749</span>
+                              <p>生产周期28天</p>
+                            </div>
+                            <span ng-click="flag = !flag"></span>
+                        </section>
+                        <section class="center">
+                          <div class="color">
+                            <p>颜色</p>
+                            <ul>
+                              <li class="active"><img src="../imgs/7.jpg" alt=""><span></span></li>
+                              <li><img src="../imgs/8.jpg" alt=""><span></span></li>
+                              <li><img src="../imgs/9.jpg" alt=""><span></span></li>
+                              <li><img src="../imgs/10.jpg" alt=""><span></span></li>
+                              <li><img src="../imgs/11.jpg" alt=""><span></span></li>
+                            </ul>
+                          </div>
+                          <div class="size1">
+                            <p>尺寸</p>
+                            <ul>
+                                <li class="active">S<span></span></li>
+                                <li>M<span></span></li>
+                                <li>L<span></span></li>
+                                <li>XL<span></span></li>
+                            </ul>
+                          </div>
+                          <div class="number">
+                            <span>购买数量</span>
+                            <div class="wrap-number">
+                              <section class="reduce"></section>
+                              <input type="text" name="name" value="1" readonly="readonly">
+                              <section class="add"></section>
+                            </div>
+
+                          </div>
+
+                        </section>
+                        <!-- 购物车 -->
+                        <footer>
+                            <section class="section1"></section>
+                            <section class="section3">确定</section>
+                        </footer>
+
+                      </div>
+
+                    </div>
+                    <li>尺码对照表</li>
+                    <li>商品评价(<span class="s1">0</span>)<span class="s2">5.0分</span></li>
+                </ul>
+                <div class="server">
+                    <section class="left">
+                        <a href="#"><img src="../imgs/3.png" alt="" /></a>
+                        <h3>cafeole服饰</h3>
+                        <br>
+                        <p>9533859</p>
+                    </section>
+                    <section class="right">客服</section>
+                </div>
+                <div class="score">
+                    <section><span>4</span>实物相符</section>
+                    <section><span>4.7</span>商家服务</section>
+                    <section><span>4.7</span>物流服务</section>
+                </div>
+            </div>
+            <!-- 商品介绍 -->
+            <div class="describe">
+                <ul>
+                    <li>
+                        <span>品名</span>
+                        <p>CafeOle女高领套头纯羊绒WF6YT12</p>
+                    </li>
+                    <li>
+                        <span>颜色</span>
+                        <p>浅粉色，浅驼色，焦糖色，深灰色，驼色，藏蓝色</p>
+                    </li>
+                    <li>
+                        <span>面料</span>
+                        <p>100％山羊绒</p>
+                    </li>
+                    <li>
+                        <span>品类</span>
+                        <p>针织</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 商品展示 -->
+            <div class="show show1">
+                <p>高领腔调 落肩廓形</p>
+                <img src="../imgs/4.jpg" alt="" />
+            </div>
+            <div class=" show show2">
+                <p>奢贵山羊绒精心织造</p>
+                <img src="../imgs/5.jpg" alt="" />
+            </div>
+            <div class=" show show3">
+                <p>定色定染天然环保质感</p>
+                <img src="../imgs/6.jpg" alt="" />
+            </div>
+            <!-- 常见问题 -->
+            <div class="problem">
+                <div>常见问题</div>
+                <p class="p1">尺码怎么选？</p>
+                <p class="p2">所有产品为标准尺码，具体可参考详情页尺码数据等，客户可根据产品风格和个人喜好选择尺码，客服建议仅供参考。</p>
+                <p class="p3">会有色差么？</p>
+                <p class="p4">所有产品均为实物拍摄，并根据实物颜色进行色差调整，尽量接近实物。但因灯光和显示器偏差等不可避免存在颜色差异，请以最终收到实物商品颜色为准。</p>
+                <p class="p5">可以开发票么？</p>
+                <p class="p6">可以根据您的需求，在申请开具发票的30天内为您发送。</p>
+            </div>
+            <!-- 尾部 -->
+            <footer>
+                <div class="top">
+                    <section class="left">
+                        <a href="#">登录</a>
+                        <span>|</span>
+                        <a href="#">注册</a>
+                    </section>
+                    <section class="right">
+                        <a href="#">关于必要</a>
+                        <span>|</span>
+                        <a href="#">回顶部</a>
+                    </section>
+                </div>
+                <div class="bottom">
+                    <mark>触屏版</mark>
+                    <span>|</span>
+                    <a href="#">客户端</a>
+                </div>
+            </footer>
+        </div>
+        <!-- 尾部 -->
+        <footer>
+            <section class="section1"></section>
+            <section class="section2">加入购物车</section>
+            <section class="section3">立即购买</section>
+        </footer>
+        <!-- 返回顶部 -->
+        <a href="#" id="top"></a>
+    </div>
+
+</body>
+  <script src="../../libs/angular.js" charset="utf-8"></script>
+<script src="../../libs/jquery-2.2.3.js" charset="utf-8"></script>
+<script src="../../libs/swiper.js" charset="utf-8"></script>
+<script src="../js/spxq.js" charset="utf-8"></script>
+<script type="text/javascript">
+</script>
+
+</html>
