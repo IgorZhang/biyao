@@ -47,6 +47,10 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: "./mine/html/no-order.html",
         controller: 'noOrderCtrl'
     })
+    .when('/spxq',{
+        templateUrl: "./spxq/html/spxq.html",
+        controller: 'spxqCtrl'
+    })
     .otherwise({
         redirectTo: '/'
     })
