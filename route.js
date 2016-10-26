@@ -1,5 +1,9 @@
 var app = angular.module('myApp', ['ngRoute', 'angularCSS']);
 
+app.controller('indexTopCtrl', function ($scope) {
+    $scope.flag = false;
+});
+
 app.config(['$routeProvider', function ($routeProvider) {
 
     $routeProvider

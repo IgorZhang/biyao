@@ -118,13 +118,13 @@
 
     </style>
 </head>
-<body ng-app="myApp">
-    <div class="index-div">
+<body ng-app="myApp" >
+    <div class="index-div" ng-controller="indexTopCtrl">
         <header>
             <div class="left-back"><</div>
             <p class="page-tittle">首页</p>
-            <div class="right-nav" ng-init="flag=false;" ng-click="flag=!flag"></div>
-            <nav ng-show="flag">
+            <div class="right-nav" ng-click="flag=!flag"></div>
+            <nav ng-click="flag=!flag" ng-show="flag">
                 <ul>
                     <li>
                         <a href="#/">
