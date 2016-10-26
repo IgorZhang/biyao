@@ -31,6 +31,18 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: "./mine/html/addAddress.html",
         controller: 'addAddressCtrl'
     })
+    .when('/changePwd',{
+        templateUrl: "./mine/html/changePwd.html",
+        controller: 'changePwdCtrl'
+    })
+    .when('/orderInfo',{
+        templateUrl: "./mine/html/orderInfo.html",
+        controller: 'orderInfoCtrl'
+    })
+    .when('/no-order',{
+        templateUrl: "./mine/html/no-order.html",
+        controller: 'noOrderCtrl'
+    })
     .otherwise({
         redirectTo: '/'
     })
