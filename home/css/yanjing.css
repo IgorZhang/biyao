@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 100px;
+}
+body{
+  background: #f1f1f1;
+}
+header{
+  width: 100%;
+  height: 0.42rem;
+  background: #fff;
+  font-size: 0.12rem;
+}
+header span{
+  float: left;
+  display: block;
+  width: 10%;
+  height: 0.42rem;
+  line-height: 0.42rem;
+  text-align: center;
+}
+header p{
+  float: left;
+  width: 80%;
+  height: 0.42rem;
+  line-height: 0.42rem;
+  text-align: center;
+}
+main::before{
+  content: " ";
+  display: block;
+  height: 0.42rem;
+  width: 100%;
+}
+main{
+  width: 100%;
+  font-size: 0.12rem;
+}
+main ul{
+  width: 100%;
+  height: 100%;
+}
+main ul li{
+  list-style: none;
+  width: 1.45rem;
+  height: 1.9rem;
+  padding-bottom: 0.1rem;
+  margin-left: 0.1rem;
+  margin-top: 0.1rem;
+  float: left;
+  background: #fff;
+}
+main ul li img{
+  width: 1.45rem;
+  height: 1.45rem;
+  float: left;
+}
+main ul li div{
+  width: 100%;
+  height: 0.2rem;
+  margin-top: 0.05rem;
+  float: left;
+  line-height: 0.2rem;
+  text-align: center;
+}
+main ul li p{
+  width: 100%;
+  height: 0.2rem;
+  float: left;
+  line-height: 0.2rem;
+  text-align: center;
+  color: red;
+}
