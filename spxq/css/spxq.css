@@ -3,7 +3,7 @@
     src: url('icomoon_eb9ba40.ttf');
 }
 /*处理返回顶部*/
-#top {
+.spxq-container #top {
   position: fixed;
   display: block;
   width: .4rem;
@@ -20,7 +20,7 @@
     font-size: 0.25rem;
     text-align: center;
 }
-#top::before {
+.spxq-container #top::before {
   content: "\e60d";
 }
 .spxq-container header {
@@ -363,7 +363,7 @@
   margin-top: .08rem;
 }
 /*下面处理尺码规则*/
-div.size {
+.spxq-container div.size {
   position: fixed;
     width: 100%;
     height: 100%;
@@ -372,7 +372,7 @@ div.size {
     left: 0px;
     top: 0;
 }
-div.size .wrap {
+.spxq-container div.size .wrap {
   background-color: #fff;
   width: 100%;
   height: 100%;
@@ -380,33 +380,33 @@ margin-top: 1.55rem;
 position: fixed;
 z-index: 130;
 }
-.info .size .top {
+.spxq-container .info .size .top {
   width: 3.08rem;
   height: .62rem;
   padding: .12rem 0 .1rem .12rem;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
 }
-.info .size .top {
+.spxq-container .info .size .top {
   display: flex;
 }
-.info .size .top .left {
+.spxq-container .info .size .top .left {
   width: .62rem;
   height: .62rem;
   border: 1px solid #ccc;
   margin-right: .1rem;
 }
-.info .size .top .left img {
+.spxq-container .info .size .top .left img {
   width: 100%;
   height: 100%;
 }
-.info .size .top .center span {
+.spxq-container .info .size .top .center span {
   color: #F85252;
   display: inline-block;
     padding-top: 0.1rem;
 
 }
-.info .size .top > span {
+.spxq-container .info .size .top > span {
   font-family: biyao;
   display: inline-block;
   width: .4rem;
@@ -415,23 +415,23 @@ z-index: 130;
   margin-left: 1.1rem;
   margin-top: .1rem;
 }
-.info .size .top > span::after{
+.spxq-container .info .size .top > span::after{
   content: "\e606";
 }
-.info .size .top .center p {
+.spxq-container .info .size .top .center p {
   font-size: .12rem;
   line-height: .24rem;
 }
-.info .size .center .color {
+.spxq-container .info .size .center .color {
   width: 2.96rem;
   margin: 0 auto;
   border-bottom: 1px solid #ccc;
   padding: .1rem 0 .2rem;
 }
-.info .size .center ul {
+.spxq-container .info .size .center ul {
   overflow: hidden;
 }
-.info .size .center .color ul li {
+.spxq-container .info .size .center .color ul li {
   width: .4rem;
   height: .4rem;
   float: left;
@@ -440,13 +440,13 @@ z-index: 130;
     margin-top: .1rem;
     position: relative;
 }
-.info .size .center .color ul li:first-child {
+.spxq-container .info .size .center .color ul li:first-child {
   margin-left: 0;
 }
-.info .size .center .color ul li.active {
+.spxq-container .info .size .center .color ul li.active {
   border: 1px solid #B768A5;
 }
-.info .size .center .color ul li.active span {
+.spxq-container .info .size .center .color ul li.active span {
   width: .1rem;
   height: .1rem;
   display: inline-block;
@@ -457,22 +457,22 @@ z-index: 130;
   background: url(../imgs/chooseSize.png) no-repeat;
   background-size: 100%;
 }
-.info .size .center ul li img {
+.spxq-container .info .size .center ul li img {
   width: 100%;
   height: 100%;
 }
 
 
-.info .size .center .size1 {
+.spxq-container .info .size .center .size1 {
   width: 2.96rem;
   margin: 0 auto;
   border-bottom: 1px solid #ccc;
   padding: .1rem 0 .2rem;
 }
-.info .size .center .size1 ul {
+.spxq-container .info .size .center .size1 ul {
   overflow: hidden;
 }
-.info .size .center .size1 ul li {
+.spxq-container .info .size .center .size1 ul li {
   width: .86rem;
   height: .28rem;
   float: left;
@@ -483,13 +483,13 @@ z-index: 130;
     line-height: .28rem;
     position: relative;
 }
-.info .size .center .size1 ul li:nth-child(3n + 1) {
+.spxq-container .info .size .center .size1 ul li:nth-child(3n + 1) {
   margin-left: 0;
 }
-.info .size .center .size1 ul li.active {
+.spxq-container .info .size .center .size1 ul li.active {
   border: 1px solid #B768A5;
 }
-.info .size .center .size1 ul li.active span {
+.spxq-container .info .size .center .size1 ul li.active span {
   width: .1rem;
   height: .1rem;
   display: inline-block;
@@ -500,7 +500,7 @@ z-index: 130;
   background: url(../imgs/chooseSize.png) no-repeat;
   background-size: 100%;
 }
-.info .size .center .number input {
+.spxq-container .info .size .center .number input {
   width: .38rem;
   height: .26rem;
   line-height: .26rem;
@@ -508,35 +508,35 @@ z-index: 130;
   outline: none;
   border: 1px solid #ccc;
 }
-.info .size .center .number {
+.spxq-container .info .size .center .number {
   display: flex;
 }
-.info .size .center .number section {
+.spxq-container .info .size .center .number section {
   width: .24rem;
   height: .28rem;
   line-height: .28rem;
   font-size: .12rem;
   text-align: center;
 }
-.info .size .center .number .reduce {
+.spxq-container .info .size .center .number .reduce {
   border: 1px solid #ccc;
   border-right: none;
   font-family: biyao;
   color: #999;
 }
-.info .size .center .number .add {
+.spxq-container .info .size .center .number .add {
   border: 1px solid #ccc;
   border-left: none;
   color: #B768A5;
   font-family: biyao;
 }
-.info .size .center .number .reduce::before {
+.spxq-container .info .size .center .number .reduce::before {
   content: "\e61e";
 }
-.info .size .center .number .add::before {
+.spxq-container .info .size .center .number .add::before {
   content: "\e601";
 }
-.info .size .center .number {
+.spxq-container .info .size .center .number {
   width: 2.96rem;
   height: .56rem;
   margin: 0 auto;
@@ -545,19 +545,19 @@ z-index: 130;
   display: flex;
   justify-content: space-between;
 }
-.info .size .center .number .wrap-number {
+.spxq-container .info .size .center .number .wrap-number {
   display: flex;
   padding-top: .1rem;
 box-sizing: border-box;
 }
-.info .size .center {
+.spxq-container .info .size .center {
   height: 2.45rem;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
 }
 
-.info .size footer {
+.spxq-container .info .size footer {
     display: flex;
     position: fixed;
     bottom: 0;
@@ -568,7 +568,7 @@ box-sizing: border-box;
     width: 100%;
 }
 
-.info .size footer .section1 {
+.spxq-container .info .size footer .section1 {
     height: .4rem;
     width: .85rem;
     border: 1px solid #ccc;
@@ -579,7 +579,7 @@ box-sizing: border-box;
 }
 
 
-.info .size footer .section3 {
+.spxq-container .info .size footer .section3 {
     height: .4rem;
     width: 2.04rem;
     background-color: #B768A5;
@@ -588,7 +588,7 @@ box-sizing: border-box;
     text-align: center;
     font-size: .15rem;
 }
-.info .size footer section {
+.spxq-container .info .size footer section {
   margin-left: .1rem;
   border-radius: 3px;
   margin-top: .08rem;
