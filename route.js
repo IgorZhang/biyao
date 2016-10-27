@@ -51,6 +51,10 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: "./spxq/html/spxq.html",
         controller: 'spxqCtrl'
     })
+    .when('/gwc2', {
+      templateUrl: "./gwc/html/gwc2.html",
+      controller: 'gwc2Ctrl'
+    })
     .otherwise({
         redirectTo: '/'
     })
