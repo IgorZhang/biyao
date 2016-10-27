@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 100px;
+}
+body{
+  background: #f1f1f1;
+}
+header{
+  width: 100%;
+  height: 0.42rem;
+}
+main{
+  width: 100%;
+  height: 4.48rem;
+
+}
+main .min{
+  font-size: 0.14rem;
+  margin-top: 0.1rem;
+  width: 100%;
+  height: 1rem;
+  padding: 0.1rem 0 0.1rem 0.12rem;
+  border-bottom: 1px solid rgb(226, 223, 223);
+  border-top: 1px solid rgb(226, 223, 223);
+  color: rgb(110, 82, 134);
+  background: #fff;
+}
+main .min section{
+  width: 0.6rem;
+  height: 0.47rem;
+  padding: 0.2rem 0.2rem 0.2rem 0;
+  float: left;
+  text-align: center;
+}
+main .min section img{
+  width: 0.3rem;
+  height: 0.3rem;
+}
+main .min section p{
+  width: 100%;
+  height: 0.17rem;
+  line-height: 0.17rem;
+  text-align: center;
+}
+main .min ul{
+  width: 1.6rem;
+  float: left;
+  margin-top: 0.1rem;
+  margin-right: 0.1rem;
+}
+main .min ul li{
+  list-style: none;
+  width: 100%;
+  height: 0.17rem;
+  line-height: 0.17rem;
+  float: left;
+  word-wrap: break-word;
+}
+main .min span{
+  display: block;
+  width: 0.53rem;
+  height: 0.36rem;
+  float: left;
+  text-align: center;
+  margin-top: 0.3rem;
+  border-left: 1px solid #535353;
+}
+main .min span img{
+  width: 0.3rem;
+  height: 0.3rem;
+}
+main .max{
+  font-size: 0.13rem;
+  width: 100%;
+  height: 0.36rem;
+  margin-top: 0.3rem;
+}
+main .max p{
+  width: 100%;
+  height: 0.18rem;
+  line-height: 0.18rem;
+  text-align: center;
+  color: rgb(110, 82, 134);
+}
+footer {
+  width: 100%;
+  height: .86rem;
+  font-size: .12rem;
+  color: #666;
+}
+footer a {
+  color: #666;
+}
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .15rem;
+  height: .43rem;
+  line-height: .43rem;
+}
+
+footer .top span {
+  display: inline-block;
+  width: .2rem;
+  text-align: center;
+}
+footer .bottom {
+  margin: 0 auto;
+  border-top: 1px solid #999;
+  text-align: center;
+  height: .42rem;
+  line-height: .42rem;
+}
+footer .bottom mark {
+  background-color: transparent;
+  color: #666;
+}
+footer .bottom span {
+  padding: .2rem;
+}
+footer .bottom a {
+  color: #B768A5;
+
+}
+footer a{
+  text-decoration: none;
+}

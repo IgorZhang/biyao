@@ -1,3 +1,147 @@
-h1{
-    color: green;
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 100px;
+}
+body{
+  background: #f1f1f1;
+}
+header{
+  width: 100%;
+  height: 0.42rem;
+  background: red;
+}
+nav{
+  width: 100%;
+  height:1.6rem;
+  padding-top: 0.15rem;
+  font-size: 0.14rem;
+  background-image:url(../imgs/beijing.png);
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+nav .portrait{
+  width: 100%;
+  height: 0.8rem;
+  text-align: center;
+}
+nav .portrait img{
+  width: 0.8rem;
+  height: 0.8rem;
+}
+nav .name{
+  width: 100%;
+  height: 0.22rem;
+  padding: 0.05rem 0 0.1rem 0;
+}
+nav .name p{
+  width: 100%;
+  height: 0.17rem;
+  padding-top: 0.05rem;
+  line-height: 0.17rem;
+  text-align: center;
+  color: #fff;
+}
+nav .paying{
+  width: 100%;
+  height: 0.44rem;
+  background: rgba(150,114,155,0.5)
+}
+nav .paying span{
+  display: inline-block;
+  width: 50%;
+  height: 0.22rem;
+  float: left;
+  line-height: 0.22rem;
+  box-sizing: border-box;
+  margin: 0.11rem 0;
+}
+nav .paying span:nth-child(1){
+  border-right: 1px solid #fff;
+}
+nav .paying span p{
+width: 100%;
+height: 0.22rem;
+color: #fff;
+text-align: center;
+}
+main{
+  width: 100%;
+  height: 2.48rem;
+  font-size: 0.14rem;
+  margin-top: 0.12rem;
+}
+main .template{
+  width: 100%;
+  height: 0.18rem;
+  padding: 0.12rem 0;
+  border-bottom: 1px solid rgb(204,204,204);
+  background: #fff;
+}
+main .template img{
+  width: 0.2rem;
+  height: 0.2rem;
+  float: left;
+  margin: 0 0.16rem 0 0.12rem;
+}
+main .template p{
+  height: 0.18rem;
+  line-height: 0.18rem;
+}
+main div:nth-child(3){
+  margin-top: 0.12rem;
+}
+.foot{
+  width: 100%;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  font-size: 0.12rem;
+  text-align: center;
+  color: rgb(135,135,135);
+}
+footer {
+  clear: both;
+  width: 100%;
+  height: .86rem;
+  font-size: .12rem;
+  color: #666;
+}
+footer a {
+  color: #666;
+  text-decoration: none;
+}
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .15rem;
+  height: .43rem;
+  line-height: .43rem;
+}
+
+footer .top span {
+  display: inline-block;
+  width: .2rem;
+  text-align: center;
+}
+footer .bottom {
+  margin: 0 auto;
+  border-top: 1px solid #999;
+  text-align: center;
+  height: .42rem;
+  line-height: .42rem;
+}
+footer .bottom mark {
+  background-color: transparent;
+  color: #666;
+}
+footer .bottom span {
+  padding: .2rem;
+}
+footer .bottom a {
+  color: #B768A5;
+
 }
