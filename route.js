@@ -31,6 +31,14 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: "./mine/html/addAddress.html",
         controller: 'addAddressCtrl'
     })
+    .when('/spxq', {
+      templateUrl: "./spxq/html/spxq.html",
+      controller: 'spxqCtrl'
+    })
+    .when('/gwc2', {
+      templateUrl: "./gwc/html/gwc2.html",
+      controller: 'gwc2Ctrl'
+    })
     .otherwise({
         redirectTo: '/'
     })
