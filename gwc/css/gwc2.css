@@ -94,7 +94,7 @@
 }
 .thing-gwc .thing .center .right .number input {
   width: .38rem;
-  height: .26rem;
+  height: .28rem;
   line-height: .26rem;
   text-align: center;
   outline: none;
@@ -257,11 +257,11 @@
 .thing-gwc > footer .right {
   padding-right: .1rem;
 }
-.thing-gwc > footer .right span {
+.thing-gwc > footer .right > span {
   color: #B768A5;
   padding-right: .05rem;
 }
-.thing-gwc > footer input {
+.thing-gwc > footer .right div {
   display: inline-block;
   width: .95rem;
   height: .4rem;

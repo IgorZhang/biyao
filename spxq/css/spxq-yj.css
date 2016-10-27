@@ -1,0 +1,35 @@
+.yj-container::before {
+  content: "";
+  height: .42rem;
+  display: block;
+}
+.select ul {
+  display: -webkit-flex;
+  height: .41rem;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+}
+.select ul li {
+  border-left: 1px solid #ccc;
+  flex-basis: 33%;
+  font-size: .14rem;
+  line-height: .41rem;
+  color: #523669;
+  padding-left: .4rem;
+}
+.select ul li:first-child {
+  background: url(../imgs/11.png) no-repeat;
+    background-size: 0.22rem;
+    background-position: .1rem;
+}
+.select ul li:nth-child(2) {
+  background: url(../imgs/12.png) no-repeat;
+    background-size: 0.22rem;
+    background-position: .1rem;
+}
+
+.select ul li:last-child {
+  background: url(../imgs/13.png) no-repeat;
+    background-size: 0.22rem;
+    background-position: .1rem;
+}
