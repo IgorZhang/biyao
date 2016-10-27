@@ -1,10 +1,13 @@
 
   <main>
       <ul>
+
         <li ng-repeat="x in items">
+          <a href="#/spxq?id={{ x.id }}">
           <img src="{{ x.imgUrl }}" alt="" />
           <div>{{ x.headline }}</div>
           <p>{{ x.price }}</p>
+          </a>
         </li>
       </ul>
   </main>

@@ -79,9 +79,11 @@
             </section>
             <ul>
               <li ng-repeat="y in x.list">
+                <a href="#/spxq?id={{y.id}}">
                 <img src="{{ y.imgUrl }}" alt="" />
                 <div>{{ y.title }}</div>
                 <p>¥{{ y.price}}</p>
+                </a>
               </li>
             </ul>
           </div>
