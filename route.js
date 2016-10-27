@@ -51,6 +51,10 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: "./spxq/html/spxq.html",
         controller: 'spxqCtrl'
     })
+    .when('/yj',{
+        templateUrl:'./home/html/yanjing.html',
+        controller:'yjCtrl'
+    })
     .otherwise({
         redirectTo: '/'
     })
