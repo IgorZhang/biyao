@@ -51,19 +51,14 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: "./spxq/html/spxq.html",
         controller: 'spxqCtrl'
     })
-<<<<<<< HEAD
     .when('/gwc2', {
       templateUrl: "./gwc/html/gwc2.html",
       controller: 'gwc2Ctrl'
     })
-    .when('/yj',{
-       templateUrl:'./home/html/yanjing.html',
-       controller:'yjCtrl'
-    })
     .when('/spxq2', {
       templateUrl: "./spxq/html/spxq-yj.html",
       controller: 'spxq-yjCtrl'
-=======
+  })
     .when('/yj',{
       templateUrl: "./home/html/yanjing.html",
       controller: 'yjCtrl'
@@ -71,7 +66,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when('/kefu',{
       templateUrl:"./mine/html/modified.html",
       controller:'modifiedCtrl'
->>>>>>> 0cb9c9297964dde41124b531a89dc99133c0f1ae
+
     })
     .otherwise({
         redirectTo: '/'

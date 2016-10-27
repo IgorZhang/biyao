@@ -2,17 +2,13 @@
 body{
   background: #f1f1f1;
 }
-<<<<<<< HEAD
 .mine nav::before{
   content: " ";
   display: block;
   height: 0.42rem;
   width: 100%;
 }
-.mine  nav{
-=======
 .nav{
->>>>>>> 0cb9c9297964dde41124b531a89dc99133c0f1ae
   width: 100%;
   height:1.6rem;
   padding-top: 0.15rem;
@@ -24,37 +20,26 @@ body{
   background-repeat: no-repeat;
 
 }
-<<<<<<< HEAD
-.mine nav .portrait{
-=======
 .nav .portrait{
->>>>>>> 0cb9c9297964dde41124b531a89dc99133c0f1ae
   width: 100%;
   height: 0.8rem;
   text-align: center;
 }
-<<<<<<< HEAD
 .mine nav .portrait img{
   width: 0.8rem;
   height: 0.8rem;
 }
-.mine nav .name{
-=======
+
 .nav .portrait img{
   width: 0.8rem;
   height: 0.8rem;
 }
 .nav .name{
->>>>>>> 0cb9c9297964dde41124b531a89dc99133c0f1ae
   width: 100%;
   height: 0.22rem;
   padding: 0.05rem 0 0.1rem 0;
 }
-<<<<<<< HEAD
-.mine nav .name p{
-=======
 .nav .name p{
->>>>>>> 0cb9c9297964dde41124b531a89dc99133c0f1ae
   width: 100%;
   height: 0.17rem;
   padding-top: 0.05rem;
@@ -62,20 +47,12 @@ body{
   text-align: center;
   color: #fff;
 }
-<<<<<<< HEAD
-.mine  nav .paying{
-=======
 .nav .paying{
->>>>>>> 0cb9c9297964dde41124b531a89dc99133c0f1ae
   width: 100%;
   height: 0.44rem;
   background: rgba(150,114,155,0.5)
 }
-<<<<<<< HEAD
-.mine nav .paying span{
-=======
 .nav .paying span{
->>>>>>> 0cb9c9297964dde41124b531a89dc99133c0f1ae
   display: inline-block;
   width: 50%;
   height: 0.22rem;
@@ -84,17 +61,13 @@ body{
   box-sizing: border-box;
   margin: 0.11rem 0;
 }
-<<<<<<< HEAD
 .mine nav .paying span:nth-child(1){
   border-right: 1px solid #fff;
 }
-.mine nav .paying span p{
-=======
 .nav .paying span:nth-child(1){
   border-right: 1px solid #fff;
 }
 .nav .paying span p{
->>>>>>> 0cb9c9297964dde41124b531a89dc99133c0f1ae
 width: 100%;
 height: 0.22rem;
 color: #fff;
