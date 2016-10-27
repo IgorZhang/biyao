@@ -8,15 +8,11 @@ html{
 body{
   background: #f1f1f1;
 }
-header{
-  width: 100%;
-  height: 0.42rem;
-  background: red;
-}
-nav{
+.nav{
   width: 100%;
   height:1.6rem;
   padding-top: 0.15rem;
+  margin-top: 0.42rem;
   font-size: 0.14rem;
   background-image:url(../imgs/beijing.png);
   background-size:cover;
@@ -24,21 +20,21 @@ nav{
   background-repeat: no-repeat;
 
 }
-nav .portrait{
+.nav .portrait{
   width: 100%;
   height: 0.8rem;
   text-align: center;
 }
-nav .portrait img{
+.nav .portrait img{
   width: 0.8rem;
   height: 0.8rem;
 }
-nav .name{
+.nav .name{
   width: 100%;
   height: 0.22rem;
   padding: 0.05rem 0 0.1rem 0;
 }
-nav .name p{
+.nav .name p{
   width: 100%;
   height: 0.17rem;
   padding-top: 0.05rem;
@@ -46,12 +42,12 @@ nav .name p{
   text-align: center;
   color: #fff;
 }
-nav .paying{
+.nav .paying{
   width: 100%;
   height: 0.44rem;
   background: rgba(150,114,155,0.5)
 }
-nav .paying span{
+.nav .paying span{
   display: inline-block;
   width: 50%;
   height: 0.22rem;
@@ -60,10 +56,10 @@ nav .paying span{
   box-sizing: border-box;
   margin: 0.11rem 0;
 }
-nav .paying span:nth-child(1){
+.nav .paying span:nth-child(1){
   border-right: 1px solid #fff;
 }
-nav .paying span p{
+.nav .paying span p{
 width: 100%;
 height: 0.22rem;
 color: #fff;
