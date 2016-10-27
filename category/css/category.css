@@ -17,23 +17,31 @@ header{
   height: 0.42rem;
   background:#fff;
 }
-nav{
+
+.li{
+  border-bottom: 2px solid #523568;
+}
+.nav{
   width: 100%;
   height: 0.47rem;
   font-size: 0.16rem;
   overflow: auto;
   background: #fff;
+  position: fixed;
+  top: 0.42rem;
+  left: 0;
+  z-index: 10;
 }
 ::-webkit-scrollbar {
 display: none;
 }
-nav ul{
+.nav ul{
   width: 9.8rem;
   margin-left: 0.15rem;
 }
-nav ul li{
+.nav ul li{
   width:0.32rem;
-  height: 0.47rem;
+  height: 0.45rem;
   float: left;
   list-style: none;
   color:rgb(51,51,51);
@@ -47,6 +55,7 @@ nav ul li{
   height: 0.5rem;
   position: relative;
   font-size: 0.16rem;
+  clear: both;
 }
 .div .div1{
   width: 0.58rem;
@@ -55,17 +64,41 @@ nav ul li{
   left: 0;
   top: 0.12rem;
 }
-.div .div2{
+main .max{
+  width: 100%;
+}
+main .max ul{
+  width: 100%;
+  padding-left: 0.15rem;
+}
+main .max ul li{
+  list-style: none;
+  font-size: 0.14rem;
+  float: left;
+  height: 0.24rem;
+  line-height: 0.24rem;
+  font-size: 0.14rem;
+  padding: 0 0.1rem;
+  margin: 0.08rem 0;
+  margin-right: 0.15rem;
+}
+.loge{
+  border: 1px solid rgb(82, 53, 104);
+  border-radius: 12px;
+  background: rgb(82, 53, 104);
+  color: #fff;
+}
+main .div .div2{
   width: 0.58rem;
   height:0.05rem;
   position: absolute;
   top: 0.12rem;
   right: 0;
 }
-.div img{
+main .div img{
   width: 100%;
 }
-.div p{
+main .div p{
   height: 0.5rem;
   text-align: center;
   line-height: 0.5rem;
@@ -73,11 +106,12 @@ nav ul li{
 main{
   width: 100%;
   font-size: 0.14rem;
+  margin-top: 0.47rem;
 }
 main ul{
   width: 100%;
 }
-main ul li{
+main>ul>li{
   width: 1.45rem;
   height: 1.9rem;
   float: left;

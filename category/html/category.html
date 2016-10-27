@@ -3,9 +3,9 @@
 
 </header>
 <!-- 导航 -->
-<nav>
+<section class="nav">
   <ul>
-    <li>眼镜</li>
+    <li class="li">眼镜</li>
     <li>服装</li>
     <li>婴童</li>
     <li>鞋靴</li>
@@ -18,22 +18,31 @@
     <li>厨具</li>
     <li>家具</li>
   </ul>
-</nav>
+</section>
 <!-- loge -->
-<div class="div">
-  <div class="div1"><img src="../category/imgs/c1.png" alt="" /></div>
-  <p>眼镜 · 依视路旗下企业制造</p>
-  <div class="div2"><img src="../category/imgs/c2.png" alt="" /></div>
-</div>
+
 <!-- 模版 -->
 <main>
+  <div class="max">
+    <ul>
+      <li ng-repeat="y in items.arry">{{ y.caption }}</li>
+    </ul>
+  </div>
+  <div class="div">
+    <div class="div1"><img src="../category/imgs/c1.png" alt="" /></div>
+    <p>{{ items.title }}</p>
+    <div class="div2"><img src="../category/imgs/c2.png" alt="" /></div>
+  </div>
   <ul>
-    <li ng-repeat="x in items">
+
+    <li ng-repeat="x in items.data">
+      <a href="#/spxq?id={{ x.id }}">
       <img src="{{x.imgUrl}}" alt="" />
       <div class="">{{ x.headline }}</div>
       <p>{{ x.price }}</p>
+      </a>
     </li>
-  
+
   </ul>
 </main>
 <!-- 页脚 -->
