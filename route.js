@@ -66,7 +66,10 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when('/kefu',{
       templateUrl:"./mine/html/modified.html",
       controller:'modifiedCtrl'
-
+    })
+    .when('/dizhi',{
+      templateUrl:"./mine/html/noaddres.html",
+      controller:'addresCtrl'
     })
     .otherwise({
         redirectTo: '/'
