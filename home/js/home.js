@@ -10,6 +10,7 @@ app.controller('homeCtrl', function ($scope,$css,$http) {
     window.onload = function(){
     $('#home nav section img').width(width);
     }
+    clearInterval(timer);
     var width = $('#home nav').width();
     var count = $('#home nav section img').length;
     var index = 0;
