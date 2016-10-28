@@ -80,7 +80,7 @@ app.controller('spxqCtrl', function ($scope, $rootScope, $css, $location, $http)
             // console.log(data.data);
             // 遍历数据，找到与商品编号id相同的数据
             angular.forEach(data.data, function (value,index){
-                // console.log(value)
+                console.log(value)
                 angular.forEach(value.list, function (ele, index){
                     // console.log(ele)
                     // 找到数据后将数据添加到页面中

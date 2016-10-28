@@ -1,0 +1,72 @@
+header{
+  width: 100%;
+  height: 0.42rem;
+}
+main{
+  width: 100%;
+  height: 4.48rem;
+  background: #fff;
+  font-size: 0.14rem;
+}
+main a{
+  text-decoration: none;
+  color:#fff;
+
+}
+main .div{
+  width: 95%;
+  height: 0.18rem;
+  padding: 0.1rem 0;
+  margin: 0.12rem 0.06rem;
+  background: #B768A5;
+  border: 1px solid #B768A5;
+  border-radius: 5px;
+}
+main .div p{
+  width: 100%;
+  height: 0.18rem;
+  text-align: center;
+  line-height: 0.18rem;
+}
+footer {
+  clear: both;
+  width: 100%;
+  height: .86rem;
+  font-size: .12rem;
+  color: #666;
+}
+footer a {
+  color: #666;
+  text-decoration: none;
+}
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .15rem;
+  height: .43rem;
+  line-height: .43rem;
+}
+
+footer .top span {
+  display: inline-block;
+  width: .2rem;
+  text-align: center;
+}
+footer .bottom {
+  margin: 0 auto;
+  border-top: 1px solid #999;
+  text-align: center;
+  height: .42rem;
+  line-height: .42rem;
+}
+footer .bottom mark {
+  background-color: transparent;
+  color: #666;
+}
+footer .bottom span {
+  padding: .2rem;
+}
+footer .bottom a {
+  color: #B768A5;
+
+}
