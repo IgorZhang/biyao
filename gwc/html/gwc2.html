@@ -1,39 +1,36 @@
 
     <div class="thing-gwc">
-      <!-- 头部 -->
-      <header>
 
-      </header>
       <!-- 主体 -->
       <div class="wrapper">
         <div class="wrap-inner">
-          <div class="thing">
+          <div class="thing" ng-repeat="value in gwcList">
             <section class="top">
               <span class="qx xz"></span>
-              <p>cafeole服饰</p>
+              <p>{{value.name}}</p>
             </section>
             <section class="center">
               <span class="qx xz"></span>
-              <a href="#">
-                <img src="gwc/imgs/1.jpg" alt="" />
+              <a href="#/spxq?id={{value.id}}&type={{value.type}}">
+                <img src="{{value.imgUrl}}" alt="" />
               </a>
               <div class="right">
                 <p class="price">
-                  <span class="span1">CafeOle女高领套头纯羊绒WF6YT12</span>
-                  <span class="span2">￥749</span>
+                  <span class="span1">{{ value.name }}</span>
+                  <span class="span2">￥{{ value.price }}</span>
                 </p>
                 <p class="info">颜色:浅粉色 尺寸:S</p>
                 <div class="number">
-                      <section class="reduce"></section>
-                      <input type="text" name="name" value="1" readonly="readonly">
-                      <section class="add"></section>
-                      <span class="del"></span>
+                      <section class="reduce" ng-click="reduceCount($index)"></section>
+                      <input type="text" name="name" value="{{value.count}}" readonly="readonly">
+                      <section class="add" ng-click="addCount($index)"></section>
+                      <span class="del" ng-click="remove($index)"></span>
                 </div>
               </div>
             </section>
-            <section class="bottom">共<span class="count">1</span>件
+            <section class="bottom">共<span class="count">{{value.count}}</span>件
               <span class="sum">合计：</span>
-              <span class="price">￥<span class="price1">749</span></span>
+              <span class="price">￥<span class="price1">{{value.count*value.price}}</span></span>
             </section>
           </div>
         </div>
@@ -67,9 +64,9 @@
           </div>
           <div class="right">
             <mark>合计：</mark>
-            <span>￥<span class="price1">749</span></span>
+            <span>￥<span class="price1">{{allMoney}}</span></span>
             <!-- <input type="button" name="name" value="结算(1)"> -->
-            <div>结算(<span>1</span>)</div>
+            <a href="#/orderInfo"><div>结算(<span>{{allCount}}</span>)</div></a>
           </div>
       </footer>
     </div>

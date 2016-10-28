@@ -79,10 +79,10 @@
             </section>
             <ul>
               <li ng-repeat="y in x.list">
-                <a href="#/spxq?id={{y.id}}">
-                <img src="{{ y.imgUrl }}" alt="" />
-                <div>{{ y.title }}</div>
-                <p>¥{{ y.price}}</p>
+                <a href="#/spxq?id={{y.id}}&type={{y.type}}">
+                    <img src="{{ y.imgUrl }}" alt="" />
+                    <div>{{ y.title }}</div>
+                    <p>¥{{ y.price}}</p>
                 </a>
               </li>
             </ul>
@@ -91,14 +91,14 @@
         <footer>
           <div class="top">
                 <section class="left">
-                  <a href=" ">登录</a >
+                  <a href="#/login">登录</a >
                   <span>|</span>
-                  <a href="#">注册</a >
+                  <a href="#/register">注册</a >
                 </section>
                 <section class="right">
                   <a href="#">关于必要</a >
                   <span>|</span>
-                  <a href="#">回顶部</a >
+                  <a href="#/home">回顶部</a >
                 </section>
               </div>
               <div class="bottom">

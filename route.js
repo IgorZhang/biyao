@@ -1,7 +1,13 @@
 var app = angular.module('myApp', ['ngRoute', 'angularCSS']);
 
-app.controller('indexTopCtrl', function ($scope) {
+app.controller('indexTopCtrl', function ($scope,$rootScope) {
     $scope.flag = false;
+    $scope.showFlag = true;
+    $scope.$on("toparent", function (event,data){
+        console.log(event);
+        console.log("showFlag:" , data)
+        $scope.showFlag = data;
+    })
 });
 
 app.config(['$routeProvider', function ($routeProvider) {
@@ -15,8 +21,8 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: "./category/html/category.html",
         controller: 'categoryCtrl'
     })
-    .when('/gwc',{
-        templateUrl: "./gwc/html/gwc.html",
+    .when('/gwc2',{
+        templateUrl: "./gwc/html/gwc2.html",
         controller: 'gwcCtrl'
     })
     .when('/mine',{

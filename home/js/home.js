@@ -1,5 +1,5 @@
-app.controller('homeCtrl', function ($scope,$css,$http) {
-
+app.controller('homeCtrl', function ($rootScope,$scope,$css,$http) {
+    $rootScope.showFlag = true;
     $scope.tittle = "首页";
     $css.removeAll();
     $css.add('../home/css/home.css');

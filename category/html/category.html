@@ -36,7 +36,7 @@
   <ul>
 
     <li ng-repeat="x in items.data">
-      <a href="#/spxq?id={{ x.id }}">
+      <a href="#/spxq?id={{ x.id }}&type={{x.type}}">
       <img src="{{x.imgUrl}}" alt="" />
       <div class="">{{ x.headline }}</div>
       <p>{{ x.price }}</p>
@@ -49,14 +49,14 @@
 <footer>
   <div class="top">
         <section class="left">
-          <a href=" ">登录</a >
+          <a href="#/login">登录</a >
           <span>|</span>
-          <a href="#">注册</a >
+          <a href="#/register">注册</a >
         </section>
         <section class="right">
           <a href="#">关于必要</a >
           <span>|</span>
-          <a href="#">回顶部</a >
+          <a href="#/category">回顶部</a >
         </section>
       </div>
       <div class="bottom">

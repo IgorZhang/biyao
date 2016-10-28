@@ -26,13 +26,16 @@
     padding: 0;
 }
 .thing-gwc .wrap-inner {
-  height: 4.48rem;
+  min-height: 4.48rem;
+  overflow: hidden;
 }
 .thing-gwc .wrapper .thing{
+    width: 100%;
   font-size: .14rem;
   background-color: #fff;
   color: #666;
   margin-top: .15rem;
+  overflow: hidden;
 }
 .thing-gwc .thing .top {
   display: flex;
@@ -49,6 +52,7 @@
   height: 1.14rem;
   border-top: 1px dotted #ccc;
   border-bottom: 1px dotted #ccc;
+  box-sizing: border-box;
 }
 .thing-gwc .thing .center > * {
   float: left;
@@ -74,7 +78,7 @@
 }
 .thing-gwc .thing .center .right .span1 {
   display: inline-block;
-  width: 1.28rem;
+  width: 1.20rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

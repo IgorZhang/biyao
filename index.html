@@ -123,8 +123,8 @@
 <body ng-app="myApp" >
     <div class="index-div" ng-controller="indexTopCtrl">
         <header>
-            <div class="left-back"><</div>
-            <p class="page-tittle">首页</p>
+            <div class="left-back" onclick="history.go(-1)" ><div ng-show="{{showFlag}}"><</div></div>
+            <p class="page-tittle">必要</p>
             <div class="right-nav" ng-click="flag=!flag"></div>
             <nav ng-click="flag=!flag" ng-show="flag">
                 <ul>
@@ -141,7 +141,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#/gwc">
+                        <a href="#/gwc2">
                             <div class="imgwrap"></div>
                             <p>购物车</p>
                         </a>
@@ -177,8 +177,6 @@
 <script src="./gwc/js/gwc2.js" charset="utf-8"></script>
 <script src="./home/js/yanjing.js" charset="utf-8"></script>
 <script src="./spxq/js/spxq-yj.js" charset="utf-8"></script>
-
-<script src="./home/js/yanjing.js" charset="utf-8"></script>
 <script src="./mine/js/modified.js" charset="utf-8"></script>
 
 </html>

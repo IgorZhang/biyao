@@ -1,29 +1,27 @@
 
-    <div class="spxq-container" ng-app="" ng-init="flag = true">
+    <div class="spxq-container"  ng-init="flag = true">
         <!-- 头部 -->
-        <header>
 
-        </header>
         <div class="wrapper">
             <!-- 轮播图 -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide s1">
-                        <img src="spxq/imgs/1.jpg" alt="" />
+                    <!-- <div class="swiper-slide s1">
+                        <img src="{{ goodsImg }}" alt="" />
                     </div>
                     <div class="swiper-slide s2">
-                        <img src="spxq/imgs/2.jpg" alt="" />
+                        <img src="{{ goodsImg }}" alt="" />
                     </div>
                     <div class="swiper-slide s3">
-                        <img src="spxq/imgs/3.jpg" alt="" />
-                    </div>
+                        <img src="{{ goodsImg }}" alt="" />
+                    </div> -->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
             <!-- 商品信息 -->
             <div class="info">
                 <section class="section1">
-                    <p><span>￥749</span>生产周期28天</p>
+                    <p><span>{{ goodsPrice }}</span>生产周期28天</p>
                     <div>
                         <span>7天无忧退换</span>
                         <span>先行赔付</span>
@@ -39,7 +37,7 @@
                         <section class="top">
                             <div class="left"><img src="spxq/imgs/7.jpg" alt="" /></div>
                             <div class="center">
-                              <span>￥749</span>
+                              <span>{{ goodsPrice }}</span>
                               <p>生产周期28天</p>
                             </div>
                             <span ng-click="flag = !flag"></span>
@@ -68,7 +66,7 @@
                             <span>购买数量</span>
                             <div class="wrap-number">
                               <section class="reduce"></section>
-                              <input type="text" name="name" value="1" readonly="readonly">
+                              <input type="text" name="name" ng-model="count">
                               <section class="add"></section>
                             </div>
 
@@ -78,7 +76,7 @@
                         <!-- 购物车 -->
                         <footer>
                             <section class="section1"></section>
-                            <section class="section3">确定</section>
+                            <a href="#/gwc2"><section class="section3" ng-click="addGwc()">确定</section></a>
                         </footer>
 
                       </div>
@@ -107,7 +105,7 @@
                 <ul>
                     <li>
                         <span>品名</span>
-                        <p>CafeOle女高领套头纯羊绒WF6YT12</p>
+                        <p>{{ goodsTittle }}</p>
                     </li>
                     <li>
                         <span>颜色</span>
@@ -126,15 +124,15 @@
             <!-- 商品展示 -->
             <div class="show show1">
                 <p>高领腔调 落肩廓形</p>
-                <img src="spxq/imgs/4.jpg" alt="" />
+                <!-- <img src="spxq/imgs/4.jpg" alt="" /> -->
             </div>
             <div class=" show show2">
                 <p>奢贵山羊绒精心织造</p>
-                <img src="spxq/imgs/5.jpg" alt="" />
+                <!-- <img src="spxq/imgs/5.jpg" alt="" /> -->
             </div>
             <div class=" show show3">
                 <p>定色定染天然环保质感</p>
-                <img src="spxq/imgs/6.jpg" alt="" />
+                <!-- <img src="spxq/imgs/6.jpg" alt="" /> -->
             </div>
             <!-- 常见问题 -->
             <div class="problem">
@@ -170,9 +168,9 @@
         <!-- 尾部 -->
         <footer>
             <section class="section1"></section>
-            <section class="section2">加入购物车</section>
-            <section class="section3">立即购买</section>
+            <section class="section2" ng-click="flag=false">加入购物车</section>
+            <section class="section3" ng-click="flag=false">立即购买</section>
         </footer>
         <!-- 返回顶部 -->
-        <a href="#" id="top"></a>
+        <a  id="top" href="javascript: scroll(0,0)"></a>
     </div>
