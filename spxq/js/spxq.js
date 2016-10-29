@@ -1,10 +1,11 @@
 app.controller('spxqCtrl', function ($scope, $rootScope, $css, $location, $http) {
 
     // 处理url传递过来的参数,为之后的遍历数据做准备
+    // console.log($location.absUrl())
     var urlObj = $location.search();
-    console.log(urlObj)
+    console.log(urlObj) // 参数的对象
     var goodsId = urlObj.id;
-    console.log(goodsId)
+    // console.log(goodsId)
 
     $scope.goodsTittle;
     $scope.price;
@@ -14,18 +15,41 @@ app.controller('spxqCtrl', function ($scope, $rootScope, $css, $location, $http)
     $scope.count = 1;
 
     $scope.addGwc = function () {
-        var newObj = {
-            id : $scope.goodsId,
-            count : $scope.count,
-            name : $scope.goodsTittle,
-            price : $scope.price,
-            imgUrl: $scope.imgUrl,
-            type: $scope.goodsType
-        }
         var gwcArr = JSON.parse(localStorage.getItem('gwc')) || [];
-        console.log(newObj);
-        gwcArr.unshift(newObj);
-        console.log(gwcArr);
+        if(gwcArr[0]){
+            var yes = 0;
+            angular.forEach(gwcArr, function (value, index){
+                if(value.id == $scope.goodsId){
+                    console.log("有相同对象，进行增加操作")
+                    gwcArr[index].count = gwcArr[index].count + $scope.count;
+                    yes = 1;
+                }else if(index == gwcArr.length-1 && yes == 0){
+                    console.log("无相同对象，新建对象存入数组");
+                    var newObj = {
+                        id : $scope.goodsId,
+                        count : $scope.count,
+                        name : $scope.goodsTittle,
+                        price : $scope.price,
+                        imgUrl: $scope.imgUrl,
+                        type: $scope.goodsType
+                    }
+                    gwcArr.unshift(newObj);
+                }
+            })
+        }else{
+            console.log("新建一个obj对象")
+            var newObj = {
+                id : $scope.goodsId,
+                count : $scope.count,
+                name : $scope.goodsTittle,
+                price : $scope.price,
+                imgUrl: $scope.imgUrl,
+                type: $scope.goodsType
+            }
+            gwcArr.unshift(newObj);
+            // console.log(gwcArr);
+        }
+
         localStorage.setItem('gwc',JSON.stringify(gwcArr));
     }
 
@@ -64,7 +88,7 @@ app.controller('spxqCtrl', function ($scope, $rootScope, $css, $location, $http)
     $('.number .reduce').on('click', function () {
         count = $('.number input').val();
         count--;
-        $scope.count++;
+        $scope.count--;
         $('.number input').val(count);
         if (count < 1) {
           $('.number input').val(1);
