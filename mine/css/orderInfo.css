@@ -75,6 +75,10 @@
     border-bottom: 1px solid #e5e5e5;
 }
 .orderInfo  .seller .goods-info a{
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: flex;
     justify-content: space-between;
 }
@@ -109,6 +113,10 @@
 
 }
 .orderInfo .order-money div{
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: flex;
     justify-content: space-between;
     font-size: .135rem;
@@ -135,6 +143,10 @@
     color: #666;
 }
 .orderInfo footer .top {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: flex;
     justify-content: space-between;
     padding: 0 .15rem;

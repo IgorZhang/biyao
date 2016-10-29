@@ -119,7 +119,11 @@ footer a {
   text-decoration: none;
 }
 footer .top {
-  display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
   justify-content: space-between;
   padding: 0 .15rem;
   height: .43rem;

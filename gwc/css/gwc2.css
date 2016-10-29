@@ -38,7 +38,11 @@
   overflow: hidden;
 }
 .thing-gwc .thing .top {
-  display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
   justify-content: flex-start;
   padding-left: .1rem;
   height: .41rem;
@@ -105,7 +109,11 @@
   border: 1px solid #ccc;
 }
 .thing-gwc .thing .center .right .number {
-  display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
 }
 .thing-gwc .thing .center .right .number section {
   width: .24rem;
@@ -185,7 +193,11 @@
   color: #666;
 }
 .thing-gwc .wrapper footer .top {
-  display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
   justify-content: space-between;
   padding: 0 .15rem;
   height: .43rem;
@@ -230,7 +242,11 @@
   font-size: .14rem;
 }
 .thing-gwc > footer {
-  display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
   justify-content: space-between;
 }
 .thing-gwc > footer mark {

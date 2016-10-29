@@ -39,6 +39,10 @@
     line-height: .2rem;
     font-size: .12rem;
     color: #888;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: flex;
     align-items: center;
 }
