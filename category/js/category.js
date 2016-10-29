@@ -4,7 +4,7 @@ app.controller('categoryCtrl', function ($scope,$css,$http) {
     $css.removeAll();
     $css.add('../category/css/category.css');
 
-    $http.get('http://localhost:8888/category/yanjing.json').success(function(data){
+    $http.get('./category/yanjing.json').success(function(data){
       $scope.items = data[0];
 
     })
@@ -15,7 +15,7 @@ app.controller('categoryCtrl', function ($scope,$css,$http) {
     $('.nav ul li').removeClass('li').eq($(this).index()).addClass('li');
 
     var index = $(this).index();
-    $http.get('http://localhost:8888/category/yanjing.json').success(function(data){
+    $http.get('./category/yanjing.json').success(function(data){
       $scope.items = data[index];
 
     })

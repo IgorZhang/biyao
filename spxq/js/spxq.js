@@ -99,7 +99,7 @@ app.controller('spxqCtrl', function ($scope, $rootScope, $css, $location, $http)
 
     // 通过type选择需要遍历某个JSON
     if(urlObj.type == "home") {
-        $http.get("http://localhost:8888/home/home.json").success(function (data) {
+        $http.get("./home/home.json").success(function (data) {
             console.log("请求的是Homejson");
             // console.log(data.data);
             // 遍历数据，找到与商品编号id相同的数据
@@ -132,7 +132,7 @@ app.controller('spxqCtrl', function ($scope, $rootScope, $css, $location, $http)
 
         })
     } else if (urlObj.type == "yanjing") {
-        $http.get("http://localhost:8888/home/yanjing.json").success(function (data) {
+        $http.get("./home/yanjing.json").success(function (data) {
             console.log("请求的是yanjingjson");
             console.log(data);
             angular.forEach(data.data, function (value,index){
@@ -163,7 +163,7 @@ app.controller('spxqCtrl', function ($scope, $rootScope, $css, $location, $http)
             })
         })
     } else if (urlObj.type == "fenlei") {
-        $http.get("http://localhost:8888/category/yanjing.json").success(function (data) {
+        $http.get("./category/yanjing.json").success(function (data) {
             console.log("请求的是fenleijson");
             console.log(data);
             angular.forEach(data, function (value,index){

@@ -4,7 +4,7 @@ app.controller('homeCtrl', function ($scope,$css,$http) {
     $css.removeAll();
     $css.add('../home/css/home.css');
 
-    $http.get('http://localhost:8888/home/home.json').success(function(data){
+    $http.get('./home/home.json').success(function(data){
       $scope.items = data.data
     })
     window.onload = function(){
