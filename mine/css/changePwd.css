@@ -1,3 +1,6 @@
+body{
+    background-color: #F5F5F5;
+}
 .changePwd{
     height: 100%;
     background-color: #F5F5F5;
@@ -10,6 +13,7 @@
 .changePwd main{
     width: 93%;
     margin: .15rem auto;
+    min-height: 4rem;
 }
 .changePwd main .pwd-inputs input{
     width: 100%;
@@ -46,9 +50,6 @@
 height: .86rem;
 font-size: .12rem;
 color: #666;
-position: absolute;
-bottom: 0;
-left: 0;
 }
 .changePwd footer a {
 color: #666;
