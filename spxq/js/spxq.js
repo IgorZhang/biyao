@@ -16,8 +16,10 @@ app.controller('spxqCtrl', function ($scope, $rootScope, $css, $location, $http)
 
     $scope.addGwc = function () {
         var gwcArr = JSON.parse(localStorage.getItem('gwc')) || [];
+        // 处理内存中已有或者没有数据时的操作
+        // gwcArr 中有元素的话执行遍历搜索操作
         if(gwcArr[0]){
-            var yes = 0;
+            var yes = 0;    // 定义一个判断变量，0-否, 1-是
             angular.forEach(gwcArr, function (value, index){
                 if(value.id == $scope.goodsId){
                     console.log("有相同对象，进行增加操作")
@@ -37,6 +39,7 @@ app.controller('spxqCtrl', function ($scope, $rootScope, $css, $location, $http)
                 }
             })
         }else{
+            // 数组中没有任何对象，直接新建对象存入数组
             console.log("新建一个obj对象")
             var newObj = {
                 id : $scope.goodsId,
