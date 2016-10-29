@@ -1,3 +1,4 @@
+
 var app = angular.module('myApp', ['ngRoute', 'angularCSS']);
 
 app.controller('indexTopCtrl', function ($scope,$rootScope) {
@@ -8,6 +9,12 @@ app.controller('indexTopCtrl', function ($scope,$rootScope) {
         console.log("showFlag:" , data)
         $scope.showFlag = data;
     })
+
+    var deviceWidth = document.body.offsetWidth;
+    console.log(deviceWidth);
+    console.log($('html'))
+    $('html').css("fontSize", deviceWidth/320 * 100 + 'px');
+
 });
 
 app.config(['$routeProvider', function ($routeProvider) {
